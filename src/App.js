@@ -8,6 +8,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Create from './components/create';
+import Read from './components/read';
 {/*import different componemts to display*/}
 // visual code
 function App() {
@@ -31,8 +33,8 @@ function App() {
 <Routes>
   {/*create links to each navigation that links to components*/}
   <Route path='/' element={<Content></Content>}></Route>
-  <Route path='/read' element={<Header></Header>}></Route>
-  <Route path='/create' element={<Footer></Footer>}></Route>
+  <Route path='/create' element={<Create></Create>}></Route>
+  <Route path='/read' element={<Read></Read>}></Route>
 </Routes>
 
       
