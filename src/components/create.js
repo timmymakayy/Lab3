@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Create(){
-
+    {*useEffect is a React Hook that lets you synchronize a component with an external system.*/}
     const [title,setTitle] = useState('');
     const[cover, setCover] =useState('');
     const[author,setAuthor] =useState ('');
@@ -21,7 +21,7 @@ function Create(){
     {/*>Displays My Heder in another component! in Header section*/}
  <h2>This is my Create Component</h2>
  <form onSubmit ={handleSubmit}>
-
+    {/* form added for book title, book cover and book title*/}
 <div className="form-group">
 <label>Add Book Title: </label>
 <input type="text"
@@ -49,6 +49,7 @@ onChange={(e) => { setAuthor(e.target.value) }}
 </div>
 <div>
     <input
+         {/*submit button to enter in code*/}
     type= "submit"
     value=" Create Book"></input>
 </div>
