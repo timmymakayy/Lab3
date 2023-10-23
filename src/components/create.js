@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 function Create(){
-    {*useEffect is a React Hook that lets you synchronize a component with an external system.*/}
+    {/*useEffect is a React Hook that lets you synchronize a component with an external system.*/}
     const [title,setTitle] = useState('');
     const[cover, setCover] =useState('');
     const[author,setAuthor] =useState ('');
-
+ {/*The useState() is a Hook that allows you to have state variables in functional components .*/}
     const handleSubmit = (e)=>{
         e.preventDefault();
 
@@ -17,7 +17,6 @@ function Create(){
     return(
         //visual peice
 <div>
-
     {/*>Displays My Heder in another component! in Header section*/}
  <h2>This is my Create Component</h2>
  <form onSubmit ={handleSubmit}>
@@ -30,7 +29,7 @@ value={title}
 onChange={(e) => { setTitle(e.target.value) }}
 />
 </div>
-
+ {/*form data is usually handled by the components*/}
 <div className="form-group">
 <label>Add Book Cover: </label>
 <input type="text"
